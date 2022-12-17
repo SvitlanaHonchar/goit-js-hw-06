@@ -4,5 +4,10 @@ const nameOutputEl = document.querySelector("#name-output");
 
 // присвоєння
 nameInputEl.addEventListener("input", () => {
-  return (nameOutputEl.textContent = nameInputEl.value);
+  if (nameInputEl.value === "") {
+    nameOutputEl.textContent = "Anonymous";
+    return;
+  }
+
+  return (nameOutputEl.textContent = nameInputEl.value.trim());
 });

@@ -36,4 +36,4 @@ const createGallery = images.map((image) => createGalleryEl(image)).join();
 console.log(createGallery);
 
 const galleryList = document.querySelector(".gallery");
-galleryList.innerHTML = createGallery;
+galleryList.insertAdjacentHTML("beforeend", createGallery);
