@@ -9,7 +9,7 @@ const spanEl = document.querySelector("span");
 // функція
 function onChangeColorBtnElClick() {
   bodyEl.style.backgroundColor = getRandomHexColor();
-  spanEl.textContent = getRandomHexColor();
+  spanEl.textContent = bodyEl.style.backgroundColor;
 }
 
 // відстеження кліку
